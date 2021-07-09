@@ -1,10 +1,10 @@
 version: "1"
 project:
-  name: ${scm.git.repo}
-  branch: ${scm.git.branch}
+  name: Prueba_Conf
+  branch: develop
   revision:
     name: ${scm.git.commit}
-    date: ${scm.git.commit.date}
+    date: "2021-07-08T17:24:02-06:00"
 capture:
   build:
     cleanCommands:
@@ -15,30 +15,31 @@ capture:
     ears:
       extensions: [ear]
       files:
-      - directory: ${project.projectDir}
+      - directory: .
     java:
       files:
-      - directory: ${project.projectDir}
+      - directory: .
     javascript:
       files:
-      - directory: ${project.projectDir}
+      - directory: .
       - excludeRegex: node_modules|bower_components|vendor
     php:
       files:
-      - directory: ${project.projectDir}
+      - directory: .
     python:
       files:
-      - directory: ${project.projectDir}
+      - directory: .
     ruby:
       files:
-      - directory: ${project.projectDir}
+      - directory: .
     wars:
       extensions: [war]
       files:
-      - directory: ${project.projectDir}
+      - directory: .
 analyze:
   mode: central
 install:
   coverity:
     version: default
 serverUrl: https://poc179.polaris.synopsys.com
+
