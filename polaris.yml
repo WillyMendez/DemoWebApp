@@ -15,10 +15,10 @@ capture:
     ears:
       extensions: [ear]
       files:
-      - directory: /job/Demos/job/DemoWebApp/ws/
+      - directory: /var/jenkins_home/workspace/Demos/DemoWebApp/
     java:
       files:
-      - directory: /job/Demos/job/DemoWebApp/ws/src/main
+      - directory: /var/jenkins_home/workspace/Demos/DemoWebApp/src/main
     javascript:
       files:
       - directory: .
