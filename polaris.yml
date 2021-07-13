@@ -15,7 +15,7 @@ capture:
     ears:
       extensions: [ear]
       files:
-      - directory: ${project.projectDir}
+      - directory: /job/Demos/job/DemoWebApp/ws/
     java:
       files:
       - directory: .
