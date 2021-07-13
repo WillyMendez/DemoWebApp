@@ -18,7 +18,7 @@ capture:
       - directory: /job/Demos/job/DemoWebApp/ws/
     java:
       files:
-      - directory: .
+      - directory: /job/Demos/job/DemoWebApp/ws/src/main
     javascript:
       files:
       - directory: .
