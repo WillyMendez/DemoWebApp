@@ -2,10 +2,10 @@ version: "1"
 project:
   organization: poc179
   name: DemoWebApp
-  branch: master
+  branch: ${scm.git.branch}
   revision:
-    name: Revision_Jenkins
-    date: "2021-07-08T17:24:02-06:00"
+    name: ${scm.git.commit}
+    date: ${scm.git.commit.date}
 capture:
   build:
     cleanCommands:
