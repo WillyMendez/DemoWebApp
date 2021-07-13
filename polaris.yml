@@ -9,9 +9,9 @@ project:
 capture:
   build:
     cleanCommands:
-    - shell: [mvn, -B, -f, clean]
+    - shell: [mvn, -B, -f, pom.xml, clean]
     buildCommands:
-    - shell: [mvn, -B, -f, install]
+    - shell: [mvn, -B, -f, pom.xml, install]
   fileSystem:
     ears:
       extensions: [ear]
