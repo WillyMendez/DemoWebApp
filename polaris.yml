@@ -6,8 +6,6 @@ project:
   revision:
     name: Revision_Jenkins
     date: "2021-07-08T17:24:02-06:00"
-  projectDir: /var/jenkins_home/workspace/Demos/DemoWebApp
-  captureDir: /var/jenkins_home/workspace/Demos/DemoWebApp/.synopsys/polaris
 capture:
   build:
     cleanCommands:
@@ -18,10 +16,10 @@ capture:
     ears:
       extensions: [ear]
       files:
-      - directory: /var/jenkins_home/workspace/Demos/DemoWebApp/
+      - directory: .
     java:
       files:
-      - directory: /var/jenkins_home/workspace/Demos/DemoWebApp/src/main
+      - directory: .
     javascript:
       files:
       - directory: .
