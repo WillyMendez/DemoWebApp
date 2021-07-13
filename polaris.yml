@@ -1,10 +1,13 @@
 version: "1"
 project:
+  organization: poc179
   name: DemoWebApp
   branch: master
   revision:
-    name: ${scm.git.commit}
+    name: Revision_Jenkins
     date: "2021-07-08T17:24:02-06:00"
+  projectDir: /var/jenkins_home/workspace/Demos/DemoWebApp
+  captureDir: /var/jenkins_home/workspace/Demos/DemoWebApp/.synopsys/polaris
 capture:
   build:
     cleanCommands:
@@ -40,6 +43,6 @@ analyze:
   mode: central
 install:
   coverity:
-    version: default
+    version: "2021.03"
 serverUrl: https://poc179.polaris.synopsys.com
 
